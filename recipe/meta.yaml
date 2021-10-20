@@ -1,5 +1,5 @@
 {% set name = "mvt" %}
-{% set version = "1.2.11" %}
+{% set version = "1.2.12" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mvt-{{ version }}.tar.gz
-  sha256: 3d2d07e863732aedb5ea830072afd0b90fa55f7b8b07d70663a959aea22dd1f8
+  sha256: 3f75108106e5c8a7f8700d95e68065ba312d8df4684fa56cecb5d21e54147873
 
 build:
   number: 0
@@ -26,16 +26,16 @@ requirements:
     - requests >=2.26.0
   run:
     - adb-shell >=0.4.1
-    - click >=8.0.1
-    - iosbackup >=0.9.912
-    - libusb1 >=1.9.3
+    - click >=8.0.3
+    - iosbackup >=0.9.921
+    - libusb1 >=2.0.1
     - packaging >=21.0
     - python >=3.6
     - requests >=2.26.0
-    - rich >=10.6.0
-    - simplejson >=3.17.3
+    - rich >=10.12.0
+    - simplejson >=3.17.5
     - tld >=0.12.6
-    - tqdm >=4.61.2
+    - tqdm >=4.62.3
 
 test:
   imports:
