@@ -25,7 +25,7 @@ requirements:
     - packaging >=21.0
     - requests >=2.26.0
   run:
-    - adb-shell >=0.4.1
+    - adb-shell >=0.4.2
     - click >=8.0.3
     - iosbackup >=0.9.921
     - libusb1 >=2.0.1
