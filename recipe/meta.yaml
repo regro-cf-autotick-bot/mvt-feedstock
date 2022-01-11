@@ -1,5 +1,5 @@
 {% set name = "mvt" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mvt-{{ version }}.tar.gz
-  sha256: 165061269d7504da103046719f950580c8dce67324aab7289d9345e8fe393bb2
+  sha256: faf23389daabab3a2baa6fee6c51ce8c32ebade64ca235f2b56f252b84671eae
 
 build:
   number: 0
