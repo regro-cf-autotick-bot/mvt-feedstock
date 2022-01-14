@@ -36,6 +36,7 @@ requirements:
     - simplejson >=3.17.5
     - tld >=0.12.6
     - tqdm >=4.62.3
+    - appdirs >=1.4.4
 
 test:
   imports:
