@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mvt-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mvt-{{ version }}.tar.gz
   sha256: 8141f98e522a8ac398c9f6e0aec5233d644b21a267eeeb378b6fe83f2c586dca
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - mvt-ios = mvt.ios:cli
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - packaging >=21.0
     - requests >=2.26.0
   run:
@@ -29,7 +29,7 @@ requirements:
     - iosbackup >=0.9.921
     - libusb1 >=2.0.1
     - packaging >=21.0
-    - python >=3.6
+    - python >={{ python_min }}
     - requests >=2.26.0
     - rich >=10.12.0
     - simplejson >=3.17.5
@@ -47,6 +47,7 @@ test:
     - mvt-android --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/mvt-project/mvt
